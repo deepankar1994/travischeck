@@ -3,6 +3,14 @@ language: cpp
 compiler:
   - gcc
 
+install: export CXX="g++-5"
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-5
+before_install: sudo apt-get update -qq    
 before_script:
   - mkdir build_linux
   - cd build_linux

@@ -10,5 +10,6 @@ string get_str() {
 int main() {
 	cout << get_str();
 	auto ptr = make_unique<int> (1);
+	cout << endl;
 	return 0;
 }
